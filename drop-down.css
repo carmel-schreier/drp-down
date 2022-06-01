@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: rgb(162, 220, 245);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+h1.title {
+  margin: 40px auto 0px auto;
+  color: rgb(57, 67, 152);
+  font-size: 32px;
+  font-weight: 900;
+}
+.add-container {
+  width: 300px;
+  margin: 40px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add-input {
+  width: 300px;
+  height: 45px;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 16px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 12);
+}
+
+.submit {
+  margin-left: 30px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 12);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0 5px 0 5px;
+  background: #fff;
+  color: rgb(91, 88, 88);
+}
+.submit:hover {
+  background: #efefef;
+}
+
+.show-button {
+  margin: 30px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.show-list {
+  padding: 10px 5px;
+  background: #fff;
+  color: rgb(91, 88, 88);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 12);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.show-list:hover {
+  background: #efefef;
+}
+h5.note {
+  margin: 20px auto 40px auto;
+  color: red;
+  opacity: 0;
+}
+h5.note.show {
+  opacity: 1;
+}
+.chosenCountry {
+  margin: 20px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1.chosen-country {
+  color: red;
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+.search-container {
+  position: relative;
+  max-width: 450px;
+  margin: -12px auto 0px auto;
+}
+
+.search-container .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 5px 3px rgba(0, 0, 0, 12);
+}
+
+.search-input .input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 12);
+}
+
+.search-input .icon {
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(57, 67, 152);
+  cursor: pointer;
+}
+
+.search-input .option-box {
+  padding: 0px;
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-input.active .option-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-input .option-box li {
+  list-style: none;
+  padding: 10px 8px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+.search-input.active .option-box li {
+  display: block;
+}
+.option-box li:hover {
+  background: #efefef;
+}
+.list-container {
+  display: none;
+}
+
+.list-container.display {
+  display: block;
+}
+
+.list-display {
+  border: 3px solid rgb(57, 67, 152);
+  padding: 5px 20px;
+  max-width: 250px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list-display li {
+  list-style: none;
+  font-size: 15px;
+  margin: 5px 0;
+  text-align: center;
+}
+.list-display li:hover {
+  font-weight: bold;
+}
+
+.select-note {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.5;
+  display: none;
+}
+.select-note.show {
+  display: block;
+}
+
+select .flag {
+  margin-top: 10px;
+}
+
+img {
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.yellow {
+  color: rgb(57, 67, 152);
+}
+
+.black {
+  color: black;
+}
